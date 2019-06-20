@@ -1,7 +1,6 @@
 window.addEventListener('load', ()=> {
     const canvas = document.querySelector('#main_canvas');
     const ctx = canvas.getContext("2d");
-    console.log(ctx);
 
     //Resizing
      canvas.height = window.innerHeight;
@@ -33,4 +32,8 @@ window.addEventListener('load', ()=> {
      canvas.addEventListener('mousedown',startPosition);
      canvas.addEventListener('mouseup',finishedPosition);
      canvas.addEventListener('mousemove',draw);
+
+     canvas.addEventListener('touchdown',startPosition);
+     canvas.addEventListener('touchcancel',finishedPosition);
+     canvas.addEventListener('touchemove',draw);
 });
