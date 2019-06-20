@@ -29,7 +29,7 @@ window.addEventListener('load', ()=> {
          ctx.moveTo(e.clientX, e.clientY);
       }
      //EventListeners:
-     canvas.addEventListener('onclick',startPosition);
+     canvas.addEventListener('click',startPosition);
      canvas.addEventListener('mouseup',finishedPosition);
      canvas.addEventListener('mousemove',draw);
 
